@@ -3,19 +3,19 @@ import { Bot, Heart, UserX, MessageSquare } from "lucide-react";
 import { CountUp } from "./CountUp";
 
 const features = [
-  { icon: Bot, title: "Bot Detection Score", stat: 99.2, suffix: "%", desc: "Neural-net classifier trained on 40M flagged accounts.", color: "var(--cyan)" },
-  { icon: Heart, title: "Engagement Authenticity", stat: 87, suffix: "%", desc: "Detect pod-driven likes, comment rings, and view farms.", color: "var(--magenta)" },
-  { icon: UserX, title: "Fake Follower %", stat: 71, suffix: "%", desc: "Cluster analysis surfaces purchased and dormant followers.", color: "var(--cyan)" },
-  { icon: MessageSquare, title: "Content Sentiment", stat: 94, suffix: "%", desc: "Real-time NLP scores authenticity of every comment thread.", color: "var(--magenta)" },
+  { icon: Bot, title: "Puntuacion de Deteccion de Bots", stat: 99.2, suffix: "%", desc: "Clasificador de red neuronal entrenado con 40M de cuentas marcadas.", color: "#F77737" },
+  { icon: Heart, title: "Autenticidad de Engagement", stat: 87, suffix: "%", desc: "Detecta likes de pods, anillos de comentarios y granjas de vistas.", color: "#833AB4" },
+  { icon: UserX, title: "% Seguidores Falsos", stat: 71, suffix: "%", desc: "Analisis de clusters revela seguidores comprados e inactivos.", color: "#FD1D1D" },
+  { icon: MessageSquare, title: "Sentimiento de Contenido", stat: 94, suffix: "%", desc: "NLP en tiempo real evalua la autenticidad de cada hilo de comentarios.", color: "#F77737" },
 ];
 
 export function Features() {
   return (
     <section id="features" className="relative z-10 mx-auto max-w-7xl px-6 py-32">
       <motion.div initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.6 }}>
-        <div className="mb-3 font-mono text-xs uppercase tracking-[0.3em] text-cyan">// CAPABILITIES</div>
+        <div className="mb-3 font-mono text-xs uppercase tracking-[0.3em] text-cyan">// CAPACIDADES</div>
         <h2 className="max-w-2xl font-display text-4xl font-bold md:text-6xl">
-          Forensic-grade <span className="text-cyan text-glow-cyan">signals</span>.
+          Senales de nivel <span className="text-cyan text-glow-cyan">forense</span>.
         </h2>
       </motion.div>
 

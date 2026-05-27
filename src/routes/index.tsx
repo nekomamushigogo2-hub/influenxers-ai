@@ -9,10 +9,10 @@ import { CustomCursor } from "@/components/CustomCursor";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "InfluenXers — AI Fake Influencer & Bot Detection" },
-      { name: "description", content: "Detect fake followers, bots, and inauthentic engagement in seconds with InfluenXers' AI-powered analysis." },
-      { property: "og:title", content: "InfluenXers — AI Fake Influencer & Bot Detection" },
-      { property: "og:description", content: "Detect fake followers, bots, and inauthentic engagement in seconds with InfluenXers' AI-powered analysis." },
+      { title: "InfluenXers — Deteccion de Influencers Falsos y Bots con IA" },
+      { name: "description", content: "Detecta seguidores falsos, bots y engagement inautentico en segundos con el analisis impulsado por IA de InfluenXers." },
+      { property: "og:title", content: "InfluenXers — Deteccion de Influencers Falsos y Bots con IA" },
+      { property: "og:description", content: "Detecta seguidores falsos, bots y engagement inautentico en segundos con el analisis impulsado por IA de InfluenXers." },
     ],
   }),
   component: Index,

@@ -58,7 +58,7 @@ export function ParticleNetwork() {
           const d = Math.hypot(a.x - b.x, a.y - b.y);
           if (d < maxDist) {
             const alpha = 1 - d / maxDist;
-            ctx.strokeStyle = `rgba(0, 245, 255, ${alpha * 0.25})`;
+            ctx.strokeStyle = `rgba(247, 119, 55, ${alpha * 0.25})`;
             ctx.lineWidth = devicePixelRatio * 0.6;
             ctx.beginPath();
             ctx.moveTo(a.x, a.y);
@@ -69,7 +69,7 @@ export function ParticleNetwork() {
       }
 
       for (const p of particles) {
-        ctx.fillStyle = "rgba(0, 245, 255, 0.8)";
+        ctx.fillStyle = "rgba(247, 119, 55, 0.8)";
         ctx.beginPath();
         ctx.arc(p.x, p.y, 1.6 * devicePixelRatio, 0, Math.PI * 2);
         ctx.fill();

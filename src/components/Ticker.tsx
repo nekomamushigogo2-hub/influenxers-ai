@@ -1,10 +1,10 @@
 const items = [
-  "2.3M influencers analyzed",
-  "847K bots detected",
-  "94% accuracy rate",
-  "Trusted by 120+ brands",
-  "40M data points indexed",
-  "Real-time scanning engine",
+  "2.3M influencers analizados",
+  "847K bots detectados",
+  "94% tasa de precision",
+  "Confiado por 120+ marcas",
+  "40M puntos de datos indexados",
+  "Motor de escaneo en tiempo real",
 ];
 
 export function Ticker() {

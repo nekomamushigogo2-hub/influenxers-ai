@@ -7,9 +7,9 @@ export function Footer() {
           <span>Influen<span className="text-magenta">X</span>ers</span>
         </div>
         <div className="font-mono text-xs uppercase tracking-widest text-muted-foreground">
-          // Truth at the edge of the algorithm.
+          // Verdad en el borde del algoritmo.
         </div>
-        <div className="font-mono text-[10px] text-muted-foreground">© 2026 — All bots reserved.</div>
+        <div className="font-mono text-[10px] text-muted-foreground">© 2026 — Todos los bots reservados.</div>
       </div>
     </footer>
   );

@@ -18,8 +18,8 @@ export function Hero() {
           <span>Influen<span className="text-magenta">X</span>ers</span>
         </div>
         <div className="hidden gap-8 font-mono text-xs uppercase tracking-widest md:flex">
-          <a href="#features" className="hover:text-cyan">Features</a>
-          <a href="#analyzer" className="hover:text-cyan">Analyzer</a>
+          <a href="#features" className="hover:text-cyan">Funciones</a>
+          <a href="#analyzer" className="hover:text-cyan">Analizador</a>
           <a href="#" className="hover:text-cyan">Docs</a>
         </div>
       </nav>
@@ -35,7 +35,7 @@ export function Hero() {
             <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-cyan opacity-75" />
             <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-cyan" />
           </span>
-          AI Detection Engine · v2.4 Online
+          Motor de Deteccion IA · v2.4 En Linea
         </motion.div>
 
         <motion.h1
@@ -44,8 +44,8 @@ export function Hero() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="max-w-5xl font-display text-5xl font-bold leading-[1.05] tracking-tight md:text-7xl lg:text-8xl"
         >
-          Is Your Influencer...{" "}
-          <span className="relative inline-block text-cyan animate-glitch">Real?</span>
+          Tu Influencer...{" "}
+          <span className="relative inline-block text-cyan animate-glitch">Es Real?</span>
         </motion.h1>
 
         <motion.p
@@ -54,7 +54,7 @@ export function Hero() {
           transition={{ delay: 0.6 }}
           className="mt-6 max-w-xl font-mono text-sm leading-relaxed text-muted-foreground md:text-base"
         >
-          Detect fake followers, bots, and inauthentic engagement in seconds using AI.
+          Detecta seguidores falsos, bots y engagement inautentico en segundos con IA.
         </motion.p>
 
         <motion.div
@@ -67,13 +67,13 @@ export function Hero() {
             onClick={() => scrollTo("analyzer")}
             className="group relative overflow-hidden rounded bg-cyan px-10 py-4 font-display text-base font-bold uppercase tracking-widest text-background animate-pulse-glow transition-transform hover:scale-105"
           >
-            <span className="relative z-10">Analyze Now →</span>
+            <span className="relative z-10">Analizar Ahora →</span>
           </button>
           <button
             onClick={() => scrollTo("features")}
             className="rounded border border-border px-8 py-4 font-mono text-xs uppercase tracking-widest text-foreground transition-colors hover:border-magenta hover:text-magenta"
           >
-            See How It Works
+            Ver Como Funciona
           </button>
         </motion.div>
 
@@ -96,25 +96,25 @@ export function Hero() {
 
 function DashboardMockup() {
   return (
-    <div className="relative rounded-xl border border-cyan/30 bg-card/80 p-4 backdrop-blur-xl shadow-[0_0_60px_oklch(0.88_0.18_200/20%)]">
+    <div className="relative rounded-xl border border-cyan/30 bg-card/80 p-4 backdrop-blur-xl shadow-[0_0_60px_#F7773733]">
       <div className="mb-3 flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-muted-foreground">
         <div className="flex gap-1.5">
           <span className="h-2 w-2 rounded-full bg-magenta" />
-          <span className="h-2 w-2 rounded-full bg-[oklch(0.82_0.18_85)]" />
-          <span className="h-2 w-2 rounded-full bg-[oklch(0.75_0.2_145)]" />
+          <span className="h-2 w-2 rounded-full bg-[#FD1D1D]" />
+          <span className="h-2 w-2 rounded-full bg-[#F77737]" />
         </div>
         <span>dashboard.influenxers.io</span>
-        <span className="text-cyan">● LIVE</span>
+        <span className="text-cyan">● EN VIVO</span>
       </div>
       <div className="grid gap-3 md:grid-cols-3">
-        <MiniCard label="Authenticity" value="87" sub="/100" color="oklch(0.75 0.2 145)" />
-        <MiniCard label="Bots Flagged" value="2.4K" sub="of 19K" color="var(--magenta)" />
-        <MiniCard label="Engagement" value="4.8%" sub="↑ real" color="var(--cyan)" />
+        <MiniCard label="Autenticidad" value="87" sub="/100" color="#F77737" />
+        <MiniCard label="Bots Detectados" value="2.4K" sub="de 19K" color="#833AB4" />
+        <MiniCard label="Engagement" value="4.8%" sub="↑ real" color="#FD1D1D" />
       </div>
       <div className="mt-3 h-24 rounded-md border border-border bg-background/60 p-3">
         <div className="flex h-full items-end gap-1">
           {[40, 65, 55, 80, 45, 90, 70, 95, 60, 85, 75, 100, 88, 92, 78].map((h, i) => (
-            <div key={i} className="flex-1 rounded-sm" style={{ height: `${h}%`, background: i % 3 === 0 ? "var(--magenta)" : "var(--cyan)", opacity: 0.6 + (h / 250) }} />
+            <div key={i} className="flex-1 rounded-sm" style={{ height: `${h}%`, background: i % 3 === 0 ? "#833AB4" : i % 3 === 1 ? "#FD1D1D" : "#F77737", opacity: 0.6 + (h / 250) }} />
           ))}
         </div>
       </div>
